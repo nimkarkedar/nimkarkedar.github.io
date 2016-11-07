@@ -1,0 +1,368 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f9f9f9;
+}
+
+.bodyDiv {
+  background-color: #f9f9f9;
+}
+
+
+@font-face {
+  font-family: 'Charter';
+  font-family: 'CharterItalic';
+  src: url('../fonts/Charter ITC Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Charter ITC Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Charter ITC Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Charter ITC Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Charter ITC Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Charter ITC Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/Charter Small Cap.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Charter Small Cap.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Charter Small Cap.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Charter Small Cap.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Charter Small Cap.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Charter Small Cap.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-nav { 
+  margin: 0; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+  z-index: 10;
+}
+.site-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  transition: all 0.25s ease-in;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+.site-nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.3em 1.3em 0.3em 0;
+}
+
+.site-nav li a {
+  color: #777;
+  font-size: 0.9em;
+}
+.site-nav li a:hover {
+  color: #333;
+}
+
+.site-nav li.downloadLink {
+  position: absolute;
+  right: 3%;
+
+}
+.site-nav li.downloadLink a {
+  font-size: 0.8em;
+  color: #36c;
+  border: 1px solid #36c;
+  border-radius: 0.2em;
+  padding: 0.4em 0.8em;
+  transition: all 0.2s ease-in;
+}
+.site-nav li.downloadLink a:hover {
+  background-color: #36c;
+  color: #fff;
+} 
+.avatar
+{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.designation {
+  font-size: 0.25em;
+  margin:0 0 -10px 0;
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h3 {
+  font-size: 1.7em;
+  color: #000;
+  margin-bottom: 0.3em;
+  letter-spacing: -0.022em;
+  line-height: 1.2em;
+}
+h3 span {
+  color: #000;
+  font-size: 45%;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0em;
+}
+p {
+  font-family: 'Charter', Georgia, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #555;
+}
+
+p + p { margin-top: 1.2em; }
+p strong {
+  font-weight: normal;
+  color: #000;
+}
+.introBlock,
+.aboutBlock {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.workBlock h1,
+.playBlock h1 {
+  padding-top: 3em;
+}
+
+.work {
+  margin: 5em 0 3em 0;
+}
+.clearFix {
+  display: block; 
+  clear: both; 
+}
+
+a {
+  color: #36c;
+  text-decoration: none;
+}
+
+.blackA {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Typography Ends */
+
+@-webkit-keyframes colorchange {
+  0%    { color: blue;    }
+  10%   { color: red;     }
+  20%   { color: brown;   }
+  30%   { color: green;   }
+  40%   { color: pink;    }
+  50%   { color: purple;  }
+  60%   { color: blue;    }
+  70%   { color: red;     }
+  80%   { color: brown;   }
+  90%   { color: green;   }
+  100%  { color: pink;    }
+}
+
+
+div.footer {
+  padding: 1em;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.footer p {
+  font-weight: 1.5em;
+  color: #000;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  margin-bottom: 0;
+  font-size: 2em;
+  padding: 2em;
+}
+
+span.author {
+  display: block;
+  font-size: 0.7em;
+  font-style: italic;
+  color: #444;
+  text-shadow: none;
+  padding-left: 5px;
+}
+
+
+/* Resume */
+
+body.resume {
+  background-color: #f5f5f5;
+}
+body.resume .container {
+  max-width: 900px;
+  margin: 20pt auto;
+}
+body.resume h3,
+body.resume p {
+  padding: 0;
+  margin: 0;
+}
+body.resume h3 {
+  font-size: 28pt;
+}
+.paper {
+  background-color: #fff;
+  min-height: 650px;
+  margin: 1em auto;
+  padding: 1.8em 2em;
+  border-radius: 0.3em;
+  box-shadow: 0 0px 2px rgba(0,0,0,0.2);
+}
+.paper p {
+  font-size: 11pt;
+}
+.paper p small {
+  font-size: 10pt;
+}
+.paper a,
+.paper a:hover {
+  color: #36c;
+  text-decoration: none;
+}
+body.resume p.intro {
+  font-family: 'Charter CharterItalic', Georgia, sans-serif;
+  font-style: italic;
+  font-size: 12pt;
+  margin-bottom: 10pt;
+}
+.half {
+  margin: 40pt 0 20pt 0;
+}
+.half.left {
+  float: left;
+  width: 65%;
+}
+.half.right {
+  float: left;
+  width: 35%;
+}
+.padding {
+  padding: 0 0 0 50pt;
+}
+.paper h4 {
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-weight: normal;
+}
+
+.workUnit {
+  padding: 10pt 50pt 20pt 0;
+}
+.workUnit h5 {
+  font-size: 13pt;
+}
+.workUnit h6 {
+  font-size: 11pt;
+  font-weight: normal;
+  padding-bottom: 5pt;
+  line-height: 15pt;
+}
+.workUnit .year {
+  font-size: 10pt;
+  color: #36c;
+  font-family: 'Charter CharterItalic', Georgia, sans-serif;
+  font-style: italic;
+}
+.workUnit.bullets {
+  margin: 0;
+}
+.bullets ul {
+  margin: -2pt 0 0 13pt;
+  padding: 0;
+}
+.bullets ul li {
+  list-style-type: disc;
+  color: #555;
+  font-size: 10pt;
+  margin-bottom: 8pt;
+  line-height: 11pt;
+}
+.workUnit.bullets p {
+  padding-top: 10pt;
+}
+body.resume p.moreData {
+  margin-top: -2pt;
+  font-size: 10pt;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+p.downloadPDF {
+ text-align: right; 
+ font-size: 9pt;
+ font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .footer p {
+    padding: 0.3em;
+    font-size: 20px;
+  }
+  .site-nav li.downloadLink {
+  position: absolute;
+  right: 0%;
+  }
+  .paper {
+    margin: 1em 0;
+    padding:1em;
+  }
+  .half.left,
+  .half.right {
+    width: 100%;
+  }
+  .half.left,
+  .half.right {
+    float: none;
+  }
+  .padding {
+  padding: 0;
+}
+}
+
+@media print 
+{
+  a[href]:after { content: none !important; }
+  img[src]:after { content: none !important; }
+}
