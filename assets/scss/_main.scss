@@ -59,26 +59,26 @@ a {
   max-width: 100%;
 
   @include for-size(sm) {
-    max-width: 840px;
+    max-width: 420px;
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  @include for-size(md) {
-    max-width: 1140px;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  @include for-size(lg) {
-    max-width: 1740px;
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
-  @include for-size(xl) {
-    max-width: 2000px;
-  }
+  // @include for-size(md) {
+  //   max-width: 1140px;
+  //   padding-left: 4rem;
+  //   padding-right: 4rem;
+  // }
+  //
+  // @include for-size(lg) {
+  //   max-width: 1740px;
+  //   padding-left: 8rem;
+  //   padding-right: 8rem;
+  // }
+  //
+  // @include for-size(xl) {
+  //   max-width: 2000px;
+  // }
 }
 
 .intro {
